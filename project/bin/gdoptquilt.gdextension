@@ -1,0 +1,65 @@
+[configuration]
+entry_symbol = "gdoptquilt_library_init"
+compatibility_minimum = "4.7"
+reloadable = false
+
+[libraries]
+; macOS Targets
+macos.single.debug = "./macos/d_gdoptquilt64.dylib"
+macos.double.debug = "./macos/dd_gdoptquilt64.dylib"
+macos.single.release = "./macos/gdoptquilt64.dylib"
+macos.double.release = "./macos/rr_gdoptquilt64.dylib"
+
+; iOS Targets
+ios.arm64.single.debug = "./ios/d_gdoptquilt64.dylib"
+ios.arm64.double.debug = "./ios/dd_gdoptquilt64.dylib"
+ios.arm64.single.release = "./ios/gdoptquilt64.dylib"
+ios.arm64.double.release = "./ios/rr_gdoptquilt64.dylib"
+
+; Windows 32-bit Targets
+windows.x86_32.single.debug = "./windows/d_gdoptquilt32.dll"
+windows.x86_32.double.debug = "./windows/dd_gdoptquilt32.dll"
+windows.x86_32.single.release = "./windows/gdoptquilt32.dll"
+windows.x86_32.double.release = "./windows/rr_gdoptquilt32.dll"
+
+; Windows 64-bit Targets
+windows.x86_64.single.debug = "./windows/d_gdoptquilt64.dll"
+windows.x86_64.double.debug = "./windows/dd_gdoptquilt64.dll"
+windows.x86_64.single.release = "./windows/gdoptquilt64.dll"
+windows.x86_64.double.release = "./windows/rr_gdoptquilt64.dll"
+
+; Linux x86_64 Targets
+linux.x86_64.single.debug = "./linux/d_gdoptquilt64.so"
+linux.x86_64.double.debug = "./linux/dd_gdoptquilt64.so"
+linux.x86_64.single.release = "./linux/gdoptquilt64.so"
+linux.x86_64.double.release = "./linux/rr_gdoptquilt64.so"
+
+; Linux ARM64 Targets
+linux.arm64.single.debug = "./linux/d_gdoptquiltarm64.so"
+linux.arm64.double.debug = "./linux/dd_gdoptquiltarm64.so"
+linux.arm64.single.release = "./linux/gdoptquiltarm64.so"
+linux.arm64.double.release = "./linux/rr_gdoptquiltarm64.so"
+
+; Linux RISC-V 64 Targets
+linux.rv64.single.debug = "./linux/d_gdoptquiltrv64.so"
+linux.rv64.double.debug = "./linux/dd_gdoptquiltrv64.so"
+linux.rv64.single.release = "./linux/gdoptquiltrv64.so"
+linux.rv64.double.release = "./linux/rr_gdoptquiltrv64.so"
+
+; Android x86_64 Targets
+android.x86_64.single.debug = "./android/d_gdoptquilt64.so"
+android.x86_64.double.debug = "./android/dd_gdoptquilt64.so"
+android.x86_64.single.release = "./android/gdoptquilt64.so"
+android.x86_64.double.release = "./android/rr_gdoptquilt64.so"
+
+; Android ARM64 Targets
+android.arm64.single.debug = "./android/d_gdoptquiltarm64.so"
+android.arm64.double.debug = "./android/dd_gdoptquiltarm64.so"
+android.arm64.single.release = "./android/gdoptquiltarm64.so"
+android.arm64.double.release = "./android/rr_gdoptquiltarm64.so"
+
+; Web WebAssembly Targets
+web.wasm32.single.debug = "./web/d_gdoptquilt32.nothreads.wasm"
+web.wasm32.double.debug = "./web/dd_gdoptquilt32.nothreads.wasm"
+web.wasm32.single.release = "./web/gdoptquilt32.nothreads.wasm"
+web.wasm32.double.release = "./web/rr_gdoptquilt32.nothreads.wasm"
